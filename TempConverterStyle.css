@@ -1,0 +1,69 @@
+/* styling for converter of units */
+
+/* lessons learnt - grid system, 2 columns and 3/4 rows with spacing between.
+border-style of ridge, hover affects, margins and paddings */
+
+body {
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+/* the container */
+#the-converter {
+    background-color: azure;
+    width: 420px;
+    border-style: ridge;
+    border-width: 5px;
+    
+}
+/* h1 headings */
+h1 {
+    background-color: rgb(247, 151, 6);
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 410px;
+    color: rgb(80, 80, 80);
+}
+/* all the inputs/values */
+input {
+    padding: 10px;
+    background-color: rgb(4, 207, 183);
+    color: rgb(27, 43, 90);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+/* inputs hover affects */
+input:hover {
+    background-color: rgb(188, 248, 228);
+    cursor: pointer;
+}
+
+/* class for the length section */
+.length {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+}
+    
+ .div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+}
+
+/* class for the weight section */
+.weight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+}
+         
+        
